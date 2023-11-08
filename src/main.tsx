@@ -9,8 +9,8 @@ const div = document.getElementById('root')!
 const app = ReactDOM.createRoot(div)
 
 app.render(
-  <React.StrictMode>
+  <React.Fragment>
     <RouterProvider router={router} />
     <App />
-  </React.StrictMode>,
+  </React.Fragment>,
 )
