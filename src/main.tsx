@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
+import '@/global.css'
+import { App } from '@/App'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const div = document.getElementById('root')!
+const root = ReactDOM.createRoot(div)
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
