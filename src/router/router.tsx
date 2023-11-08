@@ -1,8 +1,10 @@
 import { createHashRouter } from 'react-router-dom'
+import { MainLayout } from '@/layouts/main_layout'
 
 export const router = createHashRouter([
   {
     path: '/',
+    element: <MainLayout />,
     children: [{
       path: '/',
       element: <div>1</div>,
