@@ -1,10 +1,10 @@
-import { useTheme } from '@/hooks/theme_mode'
+import { useTheme } from '@/hooks/use_theme'
 import { useUserStore } from '@/stores/user_store'
 import { Icon } from '@/components/shared/icon'
 
 export const App: React.FC = () => {
   const { user, updateUser } = useUserStore()
-  const [color, toggleTheme] = useTheme()
+  const { theme, toggleTheme } = useTheme()
 
   const onClickAge = () => {
     updateUser({ age: user.age + 1 })
@@ -20,7 +20,7 @@ export const App: React.FC = () => {
           className="dark:text-blue-500 w-[1.2em] h-[1.2em] text-gray-500"
           icon="bi:bag-heart-fill"
         />
-        <button onClick={toggleTheme}>{color}</button>
+        <button onClick={toggleTheme}>{theme}</button>
       </div>
       <div>
         User Age:
