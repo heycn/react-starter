@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import '@/global.css'
+import '@/app.css'
 import { App } from './App'
 import { router } from '@/router/router'
 

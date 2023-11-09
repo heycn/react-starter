@@ -11,16 +11,15 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="bg-light border border-black text-lg p-8 w-96 m-auto
-     dark:bg-dark dark:text-white dark:border-white"
-    >
+    <div>
       <div className="underline">
         Hello world!
-        <Icon
-          className="dark:text-blue-500 w-[1.2em] h-[1.2em] text-gray-500"
-          icon="bi:bag-heart-fill"
-        />
-        <button onClick={toggleTheme}>{theme}</button>
+        <Icon className="dark:text-blue-500 w-[1.2em] h-[1.2em] text-gray-500" icon="bi:bag-heart-fill" />
+        <button onClick={toggleTheme}>
+          {theme === 'dark'
+            ? <Icon className="text-[#ffffff80] w-[1.2em] h-[1.2em]" icon="material-symbols:dark-mode-outline" />
+            : <Icon className="text-[#00000080] w-[1.2em] h-[1.2em]" icon="material-symbols:light-mode-outline" />}
+        </button>
       </div>
       <div>
         User Age:
