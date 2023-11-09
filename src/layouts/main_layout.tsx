@@ -3,8 +3,8 @@ import { Link, Outlet } from 'react-router-dom'
 export const MainLayout: React.FC = () => {
   return (
     <div>
-      <nav>
-        <ul className="flex flex-nowrap gap-x-4">
+      <nav className="sticky top-0 z-30 row-start-1 p-4 shadow backdrop-blur">
+        <ul className="flex flex-nowrap gap-x-8">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -16,9 +16,7 @@ export const MainLayout: React.FC = () => {
           </li>
         </ul>
       </nav>
-      <hr />
       <Outlet />
-
     </div>
   )
 }

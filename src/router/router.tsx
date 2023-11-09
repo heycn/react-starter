@@ -1,5 +1,6 @@
 import { createHashRouter } from 'react-router-dom'
 import { MainLayout } from '@/layouts/main_layout'
+import { Home } from '@/pages/home'
 
 export const router = createHashRouter([
   {
@@ -7,17 +8,17 @@ export const router = createHashRouter([
     element: <MainLayout />,
     children: [{
       path: '/',
-      element: <div>1</div>,
+      element: <Home />,
     }, {
       path: '/2',
-      element: <div>2</div>,
+      element: <div>[Page 2]</div>,
     }, {
       path: '/3',
-      element: <div>3</div>,
+      element: <div>[Page 3]</div>,
     }],
   },
   {
     path: '/about',
-    element: <div>About</div>,
+    element: <div>[Page About]</div>,
   },
 ])
