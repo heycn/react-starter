@@ -45,6 +45,9 @@ export const Home: React.FC = () => {
           <button onClick={switchLanguage}>
             <Icon className="text-[#00000080] dark:text-[#ffffff80] w-[1.2em] h-[1.2em]" icon="carbon:language" />
           </button>
+          <a rel="noreferrer" href="https://github.com/heycn/react-starter" target="_blank" title="GitHub">
+            <Icon className="text-[#00000080] dark:text-[#ffffff80] w-[1.2em] h-[1.2em]" icon="carbon:logo-github" />
+          </a>
         </div>
       </div>
     </>
