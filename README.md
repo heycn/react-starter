@@ -11,6 +11,7 @@
 - TailwindCSS
 - Iconify
 - React Router
+- i18next
 
 ## 一些技巧
 
