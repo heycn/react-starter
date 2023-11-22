@@ -23,7 +23,7 @@ a {
 }
 
 img {
-  vertical-align: middle;
+  display: block;
 }
 
 h1,
